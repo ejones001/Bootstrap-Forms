@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Form Layouts</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="container">
+    <!-- Multi-column Form Layout -->
+    <h2>Multi-column Form Layout</h2>
+    <form>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" class="form-control" id="firstName" placeholder="Enter first name">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" class="form-control" id="lastName" placeholder="Enter last name">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" class="form-control" id="phone" placeholder="Enter phone">
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <div class="container mt-4">
+    <!-- Inline Form Layout -->
+    <h2>Inline Form Layout</h2>
+    <form class="form-inline">
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="inlineName" class="sr-only">Name</label>
+        <input type="text" class="form-control" id="inlineName" placeholder="Name">
+      </div>
+      <div class="form-group mx-sm-3 mb-2">
+        <label for="inlineEmail" class="sr-only">Email</label>
+        <input type="email" class="form-control" id="inlineEmail" placeholder="Email">
+      </div>
+      <button type="submit" class="btn btn-primary mb-2">Submit</button>
+    </form>
+  </div>
+
+  <div class="container mt-4">
+    <!-- Stacked Form Layout -->
+    <h2>Stacked Form Layout</h2>
+    <form>
+      <div class="form-group">
+        <label for="stackedName">Name</label>
+        <input type="text" class="form-control" id="stackedName" placeholder="Enter name">
+      </div>
+      <div class="form-group">
+        <label for="stackedEmail">Email</label>
+        <input type="email" class="form-control" id="stackedEmail" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label for="stackedMessage">Message</label>
+        <textarea class="form-control" id="stackedMessage" rows="4" placeholder="Enter your message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
